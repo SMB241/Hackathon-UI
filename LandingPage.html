@@ -4,44 +4,137 @@
     <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="Navbar.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>VoteEd.com</title>
 </head>
 <body>
-    <body>
-        <section class="main_section">
-            <nav>
-                <h1><img src="logo.png"></h1>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><input type="text" class="search-bar" placeholder="Search..."></li>
-                    <li><select name="dropdown" id="">
-                        <option value="News">News</option>
-                        <option value="Games">Games</option>
-                        <option value="More">More...</option>
-                    </select></li>
-                </ul>
-            </nav>
-            <div class="slider-frame">
-                <div class="slide-images">
-                    <img class="image" src="BG.png">
-                    <img class="image" src="BG.png">
-                    <img class="image" src="BG.png">
-                    <img class="image" src="BG.png">
-                    <img class="image" src="BG.png">
-                    <img class="image" src="BG.png">
+    <nav>
+    <label for="menu-toggle" class="hamburger">
+        <i class="fa fa-bars"></i>
+    </label>
+        <h1><img src="logo.png"></h1>
+        <ul>
+            <li><a href="#home">Vote & Play</a></li>
+            <li><a href="About.html">Election Updates</a></li>
+            <li><a href="About.html">Voting Guide</a></li>
+            <li>
+                <select name="dropdown">
+                    <option value="News">NEWS</option>
+                    <option value="Games">News</option>
+                    <option value="More">More...</option>
+                </select>
+            </li>
+            <li>
+                <input type="text" class="search-bar" placeholder="Search..."> 
+                    <button class="search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+            </li>
+            <li>
+                <button class="log-in">
+                    <i class="fa fa-user"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <section class="main_section">
+            <div>
+                <img class="image" src=".png">
+            </div>
+            <div class="motto">
+                <h2>I have no special talents. I am only passionately curious</h2>
+            </div>
+            <div class="container">
+                <a href="infohub.html" class="btn">Voter InfoHub →</a>
+            </div>
+    </section>
+    <section class="news">
+        <h3 class="title">News Flash</h3>
+        <div class="image-scroll-container-news">
+            <div class="image-scroll-content-news">
+                <a href="article.html"><img src="news.jpg"><p>Headline Sample</p></a>
+                <a href="article.html"><img src="news.jpg"><p>Headline Sample</p></a>
+                <a href="article.html"><img src="news.jpg"><p>Headline Sample</p></a>
+                <a href="article.html"><img src="news.jpg"><p>Headline Sample</p></a>
+            </div>
+    
+            <div class="scroll-buttons-news">
+                <button class="prev-news"></button>
+                <button class="next-news"></button>
+            </div>
+        </div>
+    </section>    
+
+    <section class="nav">
+        <div>
+            <div class="image-scroll-content">
+                <a href=""><img src="news.jpg" alt="Image 1"><p>Voter’s Info Hub</p></a>
+                <a href=""><img src="news.jpg" alt="Image 1"><p>Candidate Tracker</p></a>
+                <a href=""><img src="news.jpg" alt="Image 1"><p>Rights & Riddles</p></a>
+                <a href=""><img src="news.jpg" alt="Image 1"><p>Quizzes</p></a>
+                <a href=""><img src="news.jpg" alt="Image 1"><p>Mythbusters</p></a>
+                <a href=""><img src="news.jpg" alt="Image 1"><p>Mini Games</p></a>
+            </div>
+
+            <div class="scroll-buttons">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+    </section>
+    <section class="section2" style="background-color: #FFFAFB">
+        <img class="image_faq" src="BG.png">
+    <div>
+        <div class="FAQs">
+            <h1>Frequently Asked Questions</h1>
+
+            <details class="faq-item">
+                <summary>What exactly is VoteEd and how does it contribute to voter education?</summary>
+                <div class="answer">
+                    <p>HTML stands for HyperText Markup Language and is used to create web pages.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What exactly is VoteEd and how does it contribute to voter education?</summary>
+                <div class="answer">
+                    <p>CSS (Cascading Style Sheets) is used to style and layout web pages.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What exactly is VoteEd and how does it contribute to voter education?</summary>
+                <div class="answer">
+                    <p>HTML stands for HyperText Markup Language and is used to create web pages.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What exactly is VoteEd and how does it contribute to voter education?</summary>
+                <div class="answer">
+                    <p>HTML stands for HyperText Markup Language and is used to create web pages.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+        <footer>
+            <div class="footer-container">
+                <img src="logo.png" style="height: 100px; width: auto;" alt="">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/SMBphoto6100">Contact Us</a>
+                    <a href="mailto:https://mail.google.com/mail/u/1/#inbox">About Us</a>
+                    <p>&copy; 2025 BSCS COM241 | NU Hackathon</p>
                 </div>
             </div>
-        </section>
-        <section class="section2" style="background-color: #d9ebf5;">
-            <div class="FAQs">
-                <h1>Frequently Asked Questions</h1>
-                
-            </div>
-        </section>
+        </footer>        
+    </section>
+<script src="reveal.js"></script>
+<script src="nextSlide.js"></script>
 </body>
-<script src="slideshow.js"></script>
 </html>
-  

@@ -4,41 +4,45 @@ nav {
     align-items: center;
     padding: 0 50px;
     height: 80px;
+    background-color: #0D1B2A;
     position: fixed;
-    top: 0; 
+    top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    bottom: 0;
+    z-index: 1000;
 }
 
 nav h1 {
-    font-size: 30px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
 }
 
 nav h1 img {
-    height: 250px;
-    width: auto;
+    height: 150px;
+    padding-right: 500px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 20px 20px;
     position: relative;
 }
 
 nav ul li a {
-    color: #f0f0f0;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 18px;
-    transition: color 0.3s;
+    font-size: 17px;
     position: relative;
     display: inline-block;
+    transition: color 0.3s;
 }
 
 nav ul li a::before {
@@ -46,9 +50,9 @@ nav ul li a::before {
     position: absolute;
     bottom: -5px;
     left: 0;
-    width: 0%;
+    width: 0;
     height: 3px;
-    background-color: aliceblue;
+    background-color: white;
     transition: width 0.3s ease;
 }
 
@@ -56,17 +60,34 @@ nav ul li a:hover::before {
     width: 100%;
 }
 
-nav .dropdown{
-    align-items: right;
+.hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.hamburger i {
+    font-size: 32px;
+}
+
+.log-in {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 30px;
+    color: white;
+}
+
+.log-in:hover {
+    color: #ccc;
 }
 
 @media (max-width: 1200px) {
     nav {
         padding: 0 40px;
-    }
-
-    nav h1 {
-        font-size: 26px;
     }
 
     nav h1 img {
@@ -88,19 +109,12 @@ nav .dropdown{
         height: 60px;
     }
 
-    nav h1 {
-        font-size: 22px;
-    }
-
     nav h1 img {
         height: 150px;
     }
 
     nav ul {
-        flex-direction: row; 
-        position: static;
-        background-color: transparent; 
-        width: auto; 
+        flex-direction: row;
     }
 
     nav ul li {
@@ -118,10 +132,6 @@ nav .dropdown{
         height: 50px;
     }
 
-    nav h1 {
-        font-size: 20px;    
-    }
-
     nav h1 img {
         height: 120px;
     }
@@ -136,10 +146,6 @@ nav .dropdown{
         padding: 0 10px;
     }
 
-    nav h1 {
-        font-size: 18px;
-    }
-
     nav h1 img {
         height: 100px;
     }
@@ -150,47 +156,60 @@ nav .dropdown{
 }
 
 .search-bar {
-    background: #222; 
-    border: 1px solid #555;  
-    color: #f0f0f0;
+    width: 200px;
+    padding: 10px;
+    padding-right: 35px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
     font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 20px;
     outline: none;
-    transition: all 0.3s ease-in-out;
-    width: 180px;
 }
 
-.search-bar:focus {
-    width: 220px;
-    border-color: gray;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.856);
+.search-button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+.search-button:hover {
+    color: #007bff;
+}
+
+li {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 select {
-    background: #222;
-    color: #f0f0f0; 
-    font-size: 16px;
-    padding: 8px 12px;
-    border: 1px solid #555;
-    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease-in-out;
+    appearance: none;
+    position: relative;
 }
 
-select:hover, select:focus {
-    border-color: gray;
-    box-shadow: 0 0 10px rgba(74, 59, 58, 0.6);
+select::after {
+    content: '\25BC';
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: white;
 }
 
-nav ul {
-    display: flex;
-    align-items: center;
-}
-
-nav ul li {
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
+select option {
+    background: #0D1B2A;
+    color: white;
 }
