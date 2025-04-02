@@ -7,15 +7,15 @@ body {
 }
 
 .lesson-nav {
-    position: fixed; /* Keeps the nav fixed on the screen */
-    top: 80px; /* Offset from the top to place it below the navbar (adjust as needed) */
-    left: 0; /* Align it to the left of the screen */
-    width: 100%; /* Full width */
-    margin-bottom: 10px; /* Space below the nav */
+    position: fixed;
+    top: 80px; 
+    left: 0; 
+    width: 100%;
+    margin-bottom: 10px; 
     padding: 0;
-    background: rgb(82, 100, 168); /* Background color */
-    text-align: center; /* Center the content */
-    z-index: 1000; /* Keep it on top of other elements */
+    background: rgb(82, 100, 168); 
+    text-align: center;
+    z-index: 1000;
 }
 
 .lesson-scroll-container {
