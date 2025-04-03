@@ -28,7 +28,6 @@ footer p{
 footer {
     margin: 0;
     padding: 0;
-    margin-top: 120px;
     position: relative;
     color: #fff;
     background-color: #0D1B2A;
@@ -38,11 +37,11 @@ footer {
     font-size: 1rem;
 }
 
-footer h1 img{
-    height: 200px;
+footer img{
+    height: 150px;
     width: auto;
     display: block;
-    margin-left: 0;
+    margin: auto;
 }
 
 @media (max-width: 1200px) {

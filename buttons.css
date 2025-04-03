@@ -1,7 +1,6 @@
 .button-container {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
 }
 
 .container {
@@ -10,10 +9,10 @@
 
 .container .btn {
     margin: 0 auto;
-    width: 190px;
+    width: auto;
     text-align: center;
     font-size: 25px;
-    color: black;
+    color: white;
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -31,7 +30,7 @@
     left: 0;
     width: 0;
     height: 3px;
-    background-color: black;
+    background-color: white;
     transition: width 0.3s ease;
 }
 

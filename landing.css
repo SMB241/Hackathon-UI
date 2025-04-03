@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    color: #ebf5fb;
+    font-family: 'Monda', sans-serif;
     overflow-x: hidden;
 }
 
@@ -13,73 +12,68 @@ section {
     overflow: hidden;
 }
 
-.section1 {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #ebf5fb;
+.section{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("bg.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: block;
 }
 
 .motto {
-    color: black;
     display: flex;
+    align-items: center;
     justify-content: center;
-    font-size: 30px;
+    gap: 20px;
+    text-align: left;
     margin: auto;
-    margin-top: 400px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 150px;
 }
 
-.container .btn {
-    margin: 150px auto 70px;
-    width: 300px;
-    text-align: center;
-    color: #f0f0f0;
-    font-size: 20px;
-    text-decoration: none;
+.intro {
+    color: white;
+    max-width: 50%;
+}
+
+.motto img {
+    width: 550px; 
+    height: auto;
+}
+
+.intro h1 {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
     display: block;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    position: relative;
 }
 
-.container .btn::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: aliceblue;
-    transition: width 0.3s ease;
+.intro h4 {
+    font-size: 30px;
+    margin-top: 5px;
+    display: block;
 }
 
-.container .btn:hover::before {
-    width: 100%;
+.container{
+    font-size: 30px;
+    width: 230px;
+    float: left;
+    margin-left: 300px;
 }
 
 .news {
     height: 250px;
     width: 100%;
     padding: 20px;
-    background-color: #0D1B2A;
-    border-radius: 5px;
-}
-
-.news .title {
-    padding: 0;
-    margin: 0;
-    font-size: 30px;
-    margin-right: 30px;
-    margin-bottom: 3px;
-    color: #fff;
+    background-color: #D9DCD6; 
+;
 }
 
 .image-scroll-content-news {
-    overflow: hidden;
+    padding-top: 15px;
+    width: 300px;
     position: relative;
-    padding-bottom: 5px;
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
@@ -102,6 +96,7 @@ section {
 }
 
 .image-scroll-content-news a:hover {
+    transform: translateY(-2%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -143,7 +138,6 @@ section {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 0;
 }
 
 .scroll-buttons-news .prev-news::before {
@@ -152,12 +146,11 @@ section {
     padding-right: 20px;
 }
 
-.scroll-buttons .prev::before{
+.scroll-buttons .prev::before {
     content: "❮";
     font-size: 30px;
     padding-left: 20px;
 }
-
 
 .scroll-buttons .next::before {
     content: "❯";
@@ -165,7 +158,7 @@ section {
     padding-right: 20px;
 }
 
-.scroll-buttons-news .next-news::before{
+.scroll-buttons-news .next-news::before {
     content: "❯";
     font-size: 30px;
     padding-right: 40px;
@@ -178,8 +171,6 @@ section {
 
 .nav {
     height: 200px;
-    margin: 0;
-    padding: 0;
     position: relative;
     top: 0;
     width: 100%;
@@ -202,21 +193,6 @@ section {
     position: relative;
 }
 
-.image-scroll-content a::before { 
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: black;
-    transition: width 0.3s ease;
-}
-
-.image-scroll-content a:hover::before {
-    box-shadow: #1a1a1a;
-}
-
 .image-scroll-content img {
     width: auto;
     height: 150px;
@@ -227,13 +203,22 @@ section {
 .image-scroll-content p {
     margin-top: 10px;
     font-size: 14px;
-    color: black;
+    color: white;
     text-align: center;
     font-weight: 500;
 }
 
 .image-scroll-content a:hover {
     transform: scale(1.05);
+}
+
+.section2{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh; 
+    background-color: #D9DCD6; 
+
 }
 
 .FAQs h1 {
@@ -246,13 +231,11 @@ section {
 
 details {
     padding: 10px;
-    display: block;
     border-radius: 5px;
     cursor: pointer;
     width: fit-content;
     margin-left: auto;
     margin-right: 40px;
-    overflow: hidden;
 }
 
 summary {
@@ -260,11 +243,9 @@ summary {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: left;
 }
 
 summary::after {
@@ -293,118 +274,52 @@ details p {
 details[open] p {
     opacity: 1;
     max-height: 100px;
-    transition: max-height 0.5s ease-in, opacity 0.3s ease-in-out;
 }
 
 .image_faq {
     height: 500px;
-    width: auto;
     display: flex;
     float: left;
     margin-top: 180px;
-    margin-right: auto;
     margin-left: 120px;
 }
 
 @media (max-width: 1348px) {
-    .slideshow-container {
-        max-width: 45%;
-        margin: 200px 0 50px 40px;
-    }
-
     .intro {
         font-size: 18px;
         margin-left: 600px;
         margin-top: -400px;
     }
-
-    .container .btn {
-        margin: 100px auto  auto 750px;
-        font-size: 16px;
-        width: 250px;
-    }
 }
 
 @media (max-width: 998px) {
-    .slideshow-container {
-        max-width: 45%;
-        margin: 200px 0 50px 40px;
-    }
-
     .intro {
         font-size: 18px;
         margin-left: 500px;
         margin-top: -350px;
     }
-
-    .container .btn {
-        margin: 100px auto  auto 520px;
-        font-size: 18px;
-        width: 250px;
-    }
 }
 
 @media (max-width: 768px) {
-    .slideshow-container {
-        max-width: 60%;
-        margin: 100px 0 30px 150px;
-    }
-
     .intro {
         font-size: 16px;
         margin-left: 0px;
         margin-top: 100px;
     }
-
-    .photo {
-        flex: 0 0 45%;
-    }
-
-    .container .btn {
-        margin: 70px auto 0;
-        font-size: 12px;
-        width: 180px;
-    }
 }
 
 @media (max-width: 576px) {
-    .slideshow-container {
-        max-width: 80%;
-        margin: 100px 0 30px 0px;
-    }
-
     .intro {
         font-size: 12px;
         margin-left: -30px;
         margin-top: 80px;
     }
-
-    .photo {
-        flex: 0 0 100%;
-    }
-
-    .container .btn {
-        margin: 20px auto 10px;
-        font-size: 12px;
-        width: 100px;
-    }
 }
 
 @media (max-width: 375px) {
-    .slideshow-container {
-        max-width: 80%;
-        margin: 100px auto 30px auto;
-    }
-
     .intro {
         font-size: 11px;
         margin-left: 10px;
         margin-top: 80px;
-    }
-
-    .container .btn {
-        margin: 20px auto 10px;
-        font-size: 12px;
-        width: 100px;
     }
 }
