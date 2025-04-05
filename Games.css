@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Monda', sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section .button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 600px;
+    margin-top: 90px;
+}
+
+.button-container {
+    border-radius: 100px;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 100px;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#Mythbusters{
+    background-color: brown;
+}
+
+#Quiz{
+    background-color: #F58F29;
+}
+
+#Mini-Games{
+    background-color: #6153CC;
+}
+
+.button-container a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+}
+
+.button-container:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}

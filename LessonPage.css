@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
     font-family: 'Arial', sans-serif;
     color: #ebf5fb;
     background: #f8f9fa;
@@ -13,7 +14,7 @@ body {
     width: 100%;
     margin-bottom: 10px; 
     padding: 0;
-    background: rgb(82, 100, 168); 
+    background: #D9DCD6;
     text-align: center;
     z-index: 1000;
 }
@@ -140,12 +141,10 @@ body {
 }
 
 .Quiz {
-    margin: 0;
     padding: 0;
-    padding-top: 30px;
-    height: 100vh;
-    justify-content: space-between;
-    background-color: #848fba;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #344055;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -155,12 +154,14 @@ body {
 
 .question {
     margin-bottom: 30px;
+    
 }
 
 .answers {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-right: 600px;
 }
 
 .answers label {
@@ -170,11 +171,15 @@ body {
     font-size: 30px;
 }
 
+.answers label h2{
+    color: #f8f9fa;
+}
+
 .answers input[type="checkbox"] {
     appearance: none;
     width: 25px;
     height: 25px;
-    border: 2px solid #29335C;
+    border: 2px solid #344055;
     border-radius: 5px;
     position: relative;
     cursor: pointer;
@@ -215,6 +220,23 @@ body {
     border-color: #1e2749;
 }
 
+.submit.button {
+    float: right;
+    background-color: #7D1538;
+    color: #D9DCD6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit.button:hover {
+    background-color: #CC2936   ;
+    box-shadow: #D9DCD6;
+}
 
 .button-container{
     display: flex;

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="CandidateTracker.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>VoteEd.com</title>
+</head>
+<body>
+    <nav>
+        <label for="menu-toggle" class="hamburger">
+            <i class="fa fa-bars"></i>
+        </label>
+        <h1><img src="logo.png" alt="Logo"></h1>
+        <ul>
+            <li><a href="#home">Vote & Play</a></li>
+            <li><a href="About.html">Election Updates</a></li>
+            <li><a href="About.html">Voting Guide</a></li>
+            <li>
+                <select name="dropdown">
+                    <option value="News">NEWS</option>
+                    <option value="Games">News</option>
+                    <option value="More">More...</option>
+                </select>
+            </li>
+            <li>
+                <input type="text" class="search-bar" placeholder="Search...">
+                <button class="search-button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </li>
+            <li>
+                <button class="log-in">
+                    <i class="fa fa-user"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+        <section class="section1">
+
+                <h1>Candidate Tracker</h1>
+
+            <div class="select-container">
+                <div class="select">
+                    <select>
+                        <option value="0" selected disabled>Select Region</option>
+                        <option value="1">NCR</option>
+                        <option value="2">NIR</option>
+                    </select>
+                </div>
+
+                <div class="select">
+                    <select>
+                        <option value="0" selected disabled>Select Province</option>
+                        <option value="1">Negros Occidental</option>
+                        <option value="2">Negros Oriental</option>
+                    </select>
+                </div>
+
+                <div class="select">
+                    <select>
+                        <option value="0" selected disabled>Select Municipality</option>
+                        <option value="1">Bacolod</option>
+                        <option value="2">Bago</option>
+                    </select>
+                </div>
+
+                <div class="select">
+                    <select>
+                        <option value="0" selected disabled>Select Position</option>
+                        <option value="1">Mayor</option>
+                        <option value="2">Congressman</option>
+                    </select>
+                </div>
+
+                <button class="submit-button">Submit</button>
+            </div>
+        </section>          
+    <footer>
+        <div class="footer-container">
+            <img src="logo.png">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/SMBphoto6100">Contact Us</a>
+                <a href="mailto:https://mail.google.com/mail/u/1/#inbox">About Us</a>
+                <p>&copy; 2025 BSCS COM241 | NU Hackathon</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
